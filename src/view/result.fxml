@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="controller.ResultController"
+          prefWidth="800" prefHeight="500">
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="50"/>
+        <ColumnConstraints percentWidth="50"/>
+    </columnConstraints>
+
+    <StackPane GridPane.columnIndex="0" alignment="TOP_CENTER">
+        <Label fx:id="leftTitle"
+               style="-fx-font-size: 20; -fx-font-weight: bold;" />
+    </StackPane>
+
+    <StackPane GridPane.columnIndex="1" alignment="TOP_CENTER">
+        <Label fx:id="rightTitle"
+               style="-fx-font-size: 20; -fx-font-weight: bold;" />
+    </StackPane>
+
+    <Separator orientation="VERTICAL"
+               GridPane.columnSpan="2"
+               maxHeight="100"
+               prefWidth="2"
+               GridPane.halignment="CENTER"/>
+</GridPane>
